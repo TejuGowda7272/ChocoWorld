@@ -1,27 +1,93 @@
 # ChocoWorld
 Simple Python Application for a fictional chocolate house
 
-This Python application simulates a chocolate house using SQLite to manage:
+# This Python application simulates a chocolate house using SQLite to manage:
 - Seasonal flavor offerings
 - Ingredient inventory
 - Customer flavor suggestions and allergy concerns
 
-## Requirements
-- Python 3.x
-- SQLite (built-in with Python)
+# Chocolate House Application
 
-## Setup Instructions
+The Chocolate House is a Flask-based web application designed to manage a fictional chocolate shop's seasonal flavors, ingredient inventory, and customer suggestions. It demonstrates the integration of Python, Flask, SQLite, and basic frontend technologies (HTML, CSS, and JavaScript).
 
-### 1. Clone the Repository
 
+### Folder Structure
+```
+Chocolate_House/
+│
+├── app.py                  # Main Flask application
+├── init_db.py              # Script to initialize the database
+├── chocolate_house.db      # SQLite database file
+├── templates/              # HTML templates for the application
+│   ├── index.html          # Home page
+│   ├── add_flavor.html     # Add a new flavor
+│   ├── add_ingredient.html # Add a new ingredient
+│   ├── update_ingredient.html # Update ingredient quantities
+│   ├── add_suggestion.html # Add a new suggestion
+│   ├── delete_suggestion.html # Delete a customer suggestion
+├── static/
+│   └── style.css           # CSS for application styling
+└── README.md               # Readme file with project description and instructions
+```
+
+---
+
+# Requirements
+- Python 3.10+
+- Flask (`pip install flask`)
+- SQLite (comes pre-installed with Python)
+
+---
+
+### **Setup Instructions**
+
+#### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/yourusername/chocolate-house.git
+git clone https://github.com/your-repo/chocolate-house.git
 cd chocolate-house
+```
 
-![Screenshot (12)](https://github.com/user-attachments/assets/3d7ec902-e9ff-4991-a635-3437802918b2)
-![Screenshot (13)](https://github.com/user-attachments/assets/5b9ece75-d92d-43f9-9ad2-891709bcf995)
-![Screenshot (14)](https://github.com/user-attachments/assets/5239d3cc-3ed5-48b3-a121-452fa63b7418)
-![Screenshot (9)](https://github.com/user-attachments/assets/062b2ceb-b9df-4c8f-b7bb-7a7f91bf51d8)
-![Screenshot (10)](https://github.com/user-attachments/assets/d5644a8d-3cf7-4eab-8b28-922e3fd6ef4a)
-![Screenshot (11)](https://github.com/user-attachments/assets/682cd983-5ce6-41a1-8708-fa9271224972)
+#### Step 2: Set up a Virtual Environment (Optional but Recommended)
+```bash
+python -m venv env
+
+Source env\Scripts\activate    
+```
+
+#### Step 3: Install Dependencies
+pip install flask
+
+
+#### Step 4: Initialize the Database
+Run the `init_db.py` script to create the database and tables:
+python init_db.py
+
+
+#### Step 5: Start the Application
+Run the Flask application using the following command:
+python app.py
+
+#### Step 6: Open in Browser
+Navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000) to access the application.
+
+---
+
+#### **Usage Instructions**
+- **Home Page**:
+  View the list of seasonal flavors, ingredients, and customer suggestions.
+  
+- **Add New Flavor**:
+  Navigate to the "Add Flavor" page to create a new chocolate flavor.
+  
+- **Manage Ingredients**:
+  Add or update the quantity of ingredients in the inventory.
+
+- **Customer Suggestions**:
+  View, add, or delete customer suggestions.
+
+
+#### Contact
+For queries or issues, contact:  
+- **Name**: Tejaswini G H  
+- **Email**:tejugowda363@gmail.com  
 
