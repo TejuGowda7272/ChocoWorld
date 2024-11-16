@@ -91,16 +91,16 @@ For queries or issues, contact:
 - **Name**: Tejaswini G H  
 - **Email**:tejugowda363@gmail.com  
 
-
+#### Snippets
 ![Image Alt](https://github.com/TejuGowda7272/ChocoWorld/blob/a608783e7a2da517dbb5c02041ed2081b6d67756/Screenshots/Screenshot%20(9).png)
 
-https://github.com/TejuGowda7272/ChocoWorld/blob/00dff603aa40480912949b1a3e7dab5667616b6c/Screenshots/Screenshot%20(10).png
+![Image Alt](https://github.com/TejuGowda7272/ChocoWorld/blob/00dff603aa40480912949b1a3e7dab5667616b6c/Screenshots/Screenshot%20(10).png)
 
-https://github.com/TejuGowda7272/ChocoWorld/blob/00dff603aa40480912949b1a3e7dab5667616b6c/Screenshots/Screenshot%20(11).png
+![Image Alt](https://github.com/TejuGowda7272/ChocoWorld/blob/00dff603aa40480912949b1a3e7dab5667616b6c/Screenshots/Screenshot%20(11).png)
 
-https://github.com/TejuGowda7272/ChocoWorld/blob/a608783e7a2da517dbb5c02041ed2081b6d67756/Screenshots/Screenshot%20(12).png
+![Image Alt](https://github.com/TejuGowda7272/ChocoWorld/blob/a608783e7a2da517dbb5c02041ed2081b6d67756/Screenshots/Screenshot%20(12).png)
 
-https://github.com/TejuGowda7272/ChocoWorld/blob/a608783e7a2da517dbb5c02041ed2081b6d67756/Screenshots/Screenshot%20(13).png
+![Image Alt](https://github.com/TejuGowda7272/ChocoWorld/blob/a608783e7a2da517dbb5c02041ed2081b6d67756/Screenshots/Screenshot%20(13).png)
 
-https://github.com/TejuGowda7272/ChocoWorld/blob/a608783e7a2da517dbb5c02041ed2081b6d67756/Screenshots/Screenshot%20(14).png
+![Image Alt](https://github.com/TejuGowda7272/ChocoWorld/blob/a608783e7a2da517dbb5c02041ed2081b6d67756/Screenshots/Screenshot%20(14).png)
 
