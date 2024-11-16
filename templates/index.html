@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choco World</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Heyy.. It's Chocolate World</h1>
+            <p>Here is our seasonal flavors, ingredient inventory, and customer suggestions.</p>
+        </header>
+
+        <section class="flavors">
+            <h2>Seasonal Flavor Offerings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Flavor</th>
+                        <th>Season</th>
+                        <th>Available</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for flavor in flavors %}
+                    <tr>
+                        <td>{{ flavor[1] }}</td>
+                        <td>{{ flavor[2] }}</td>
+                        <td>{{ 'Yes' if flavor[3] else 'No' }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <a href="{{ url_for('add_flavor') }}">Add Flavor</a>
+        </section>
+
+        <section class="ingredients">
+            <h2>Ingredients Inventory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                        <th>Unit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for ingredient in ingredients %}
+                    <tr>
+                        <td>{{ ingredient[1] }}</td>
+                        <td>{{ ingredient[2] }}</td>
+                        <td>{{ ingredient[3] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <a href="{{ url_for('add_ingredient') }}">Add Ingredient</a>
+        </section>
+
+        <section class="suggestions">
+            <h2>Customer Flavor Suggestions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer Name</th>
+                        <th>Flavor</th>
+                        <th>Allergy Concerns</th>
+                        <th>Suggestion Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for suggestion in suggestions %}
+                    <tr>
+                        <td>{{ suggestion[1] }}</td>
+                        <td>{{ suggestion[2] }}</td>
+                        <td>{{ suggestion[3] }}</td>
+                        <td>{{ suggestion[4] }}</td>
+                        <td><a href="{{ url_for('delete_suggestion', id=suggestion[0]) }}">Delete</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <a href="{{ url_for('add_suggestion') }}">Add Your Suggestion</a>
+        </section>
+    </div>
+</body>
+</html>

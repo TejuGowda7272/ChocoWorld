@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Suggestion</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Add Customer Suggestion</h1>
+    <form method="POST">
+        <label for="customer_name">Customer Name</label>
+        <input type="text" id="customer_name" name="customer_name" required>
+
+        <label for="flavor_name">Flavor</label>
+        <input type="text" id="flavor_name" name="flavor_name" required>
+
+        <label for="allergy_concerns">Allergy Concerns</label>
+        <input type="text" id="allergy_concerns" name="allergy_concerns">
+        <br><br>
+        <button type="submit">Add Your Suggestion</button>
+    </form>
+    <a href="{{ url_for('index') }}">Home Page</a>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Flavor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Add Your Flavor</h1>
+    <form method="POST">
+        <label for="name">Flavor</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="season">Season</label>
+        <input type="text" id="season" name="season" required>
+
+        <label for="is_available">Available</label>
+        <input type="checkbox" id="is_available" name="is_available" checked>
+<br><br>
+        <button type="submit">Add Your Flavor</button>
+    </form>
+    <a href="{{ url_for('index') }}">Home Page</a>
+</body>
+</html>
